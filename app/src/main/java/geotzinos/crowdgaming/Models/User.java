@@ -1,4 +1,4 @@
-package geotzinos.crowdgaming.Model;
+package geotzinos.crowdgaming.Models;
 
 /**
  * Created by George on 2016-05-29.
@@ -31,6 +31,7 @@ public class User {
 
     public void setApiTaken(String apiTaken) {
         this.apiTaken = apiTaken;
+ 
     }
 
     public String getName() {
