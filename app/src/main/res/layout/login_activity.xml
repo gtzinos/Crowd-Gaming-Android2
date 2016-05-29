@@ -3,7 +3,7 @@
     android:orientation="vertical" android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:id="@+id/container"
-    android:background="#DDDDDD">
+    android:background="#cccccc">
 
     <LinearLayout
         android:orientation="horizontal"
@@ -17,9 +17,10 @@
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="Welcome to our game"
-            android:id="@+id/textView2"
+            android:id="@+id/welcomeTextView"
             android:gravity="center"
-            android:paddingTop="10dp" />
+            android:paddingTop="10dp"
+            android:textColor="#161617" />
     </LinearLayout>
 
     <LinearLayout
@@ -34,7 +35,7 @@
             android:layout_height="wrap_content"
             android:inputType="textEmailAddress"
             android:ems="10"
-            android:id="@+id/editText"
+            android:id="@+id/emailTextField"
             android:hint="Email address"
             android:gravity="center"
             android:paddingTop="30dp"
@@ -53,7 +54,7 @@
             android:layout_height="wrap_content"
             android:inputType="textPassword"
             android:ems="10"
-            android:id="@+id/editText2"
+            android:id="@+id/passwordTextField"
             android:hint="Password"
             android:gravity="center" />
     </LinearLayout>
@@ -69,7 +70,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Login"
-            android:id="@+id/login_button" />
+            android:id="@+id/login_button"
+            android:onClick="ClickEventManager"/>
     </LinearLayout>
 
 </LinearLayout>
