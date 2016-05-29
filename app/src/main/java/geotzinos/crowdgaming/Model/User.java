@@ -41,6 +41,9 @@ public class User {
         this.name = name;
     }
 
+    //Default constructor
+    public User() { }
+
     public User(String name, String surname, String email, String apiTaken)
     {
         this.name = name;

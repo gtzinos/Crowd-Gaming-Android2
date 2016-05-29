@@ -1,5 +1,7 @@
 package geotzinos.crowdgaming.Model;
 
+import java.util.List;
+
 /**
  * Created by George on 2016-05-29.
  */
@@ -9,6 +11,7 @@ public class Question {
     private double weight;
     private String creationDate;
     private double timeToAnswer;
+    private List<Answer> answersList;
 
     public int getId() {
 
@@ -51,11 +54,30 @@ public class Question {
         this.timeToAnswer = timeToAnswer;
     }
 
+    public List<Answer> getAnswersList() {
+        return answersList;
+    }
+
+    public void setAnswersList(List<Answer> answersList) {
+        this.answersList = answersList;
+    }
+
+    //Default constructor
+    public Question() { }
+
     public Question(int id, String text, double weight, String creationDate){
         this.id = id;
         this.text = text;
         this.weight = weight;
         this.creationDate = creationDate;
+    }
+
+    public Question(int id, String text, double weight, String creationDate, List<Answer> answersList){
+        this.id = id;
+        this.text = text;
+        this.weight = weight;
+        this.creationDate = creationDate;
+        this.answersList = answersList;
     }
 
 }

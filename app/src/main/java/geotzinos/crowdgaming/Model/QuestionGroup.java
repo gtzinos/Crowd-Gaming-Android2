@@ -1,5 +1,7 @@
 package geotzinos.crowdgaming.Model;
 
+import java.util.List;
+
 /**
  * Created by George on 2016-05-29.
  */
@@ -9,6 +11,7 @@ public class QuestionGroup {
     private double longitude;
     private int radius;
     private String creationDate;
+    private List<Question> questionsList;
 
     public String getName() {
         return name;
@@ -50,11 +53,31 @@ public class QuestionGroup {
         this.creationDate = creationDate;
     }
 
-    public QuestionGroup(String name,double latitude,double longitude, int radius,String creationDate) {
+    public List<Question> getQuestionsList() {
+        return questionsList;
+    }
+
+    public void setQuestionsList(List<Question> questionsList) {
+        this.questionsList = questionsList;
+    }
+
+    //Default constructor
+    public QuestionGroup() { }
+
+    public QuestionGroup(String name, double latitude, double longitude, int radius, String creationDate) {
         this.name = name;
         this.latitude = latitude;
         this.longitude = longitude;
         this.radius = radius;
         this.creationDate = creationDate;
+    }
+
+    public QuestionGroup(String name, double latitude, double longitude, int radius, String creationDate, List<Question> questionsList) {
+        this.name = name;
+        this.latitude = latitude;
+        this.longitude = longitude;
+        this.radius = radius;
+        this.creationDate = creationDate;
+        this.questionsList = questionsList;
     }
 }

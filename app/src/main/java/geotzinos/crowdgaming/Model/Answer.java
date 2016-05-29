@@ -32,6 +32,9 @@ public class Answer {
         this.creationDate = creationDate;
     }
 
+    //Default constructor
+    public Answer() { }
+
     public Answer(int id, String text, String creationDate){
         this.id = id;
         this.text = text;
